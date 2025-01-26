@@ -15,7 +15,7 @@ function App() {
     let str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     if(number) str += "0123456789";
     for (let i = 1; i <= len; i++) {
-      let char = Math.floor(Math.random() * str.length + 1);
+      let char = Math.floor(Math.random() * str.length);
       p += str.charAt(char);
     }
     setPass(p);
